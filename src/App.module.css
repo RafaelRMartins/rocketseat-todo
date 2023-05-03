@@ -1,0 +1,124 @@
+.header{
+  width: 100%;
+  height: 200px;
+  background: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  max-width: 736px;
+  margin: -27px auto;
+}
+
+.newTask{
+  display: flex;
+  gap: 8px;
+}
+
+.newTask input{
+  padding: 1.6rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  width: 100%;
+  color: var(--gray-100);
+  font-size: 1.6rem;
+}
+
+.newTask input::placeholder{
+  color: var(--gray-300);
+}
+
+.newTask button{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  font-weight: 700;
+  color: var(--gray-100);
+  background: var(--primary-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.newTask button:hover{
+  background: var(--primary);
+}
+
+.task{
+  margin-top: 64px;
+}
+
+.task .info{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.info .created{
+  display: flex;
+  gap: 8px;
+}
+
+.info .created p{
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.info .created span{
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--gray-200);
+}
+
+.info .done{
+  display: flex;
+  gap: 8px;
+}
+
+.info .done p{
+  color: var(--secondary);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.info .done span{
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--gray-200);
+}
+
+.noList{
+  margin-top: 24px;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noList p{
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--gray-300);
+  margin-top: 16px;
+}
+
+.noList span{
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--gray-300);
+}
